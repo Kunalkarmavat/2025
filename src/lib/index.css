@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Traditional+Nushu:wght@300..700&display=swap');
+
+body {
+  font-family: 'Noto Traditional Nushu', sans-serif;
+}
+
+
+/* Add this CSS in your styles */
+@keyframes marquee-opposite {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-marquee-left-to-right {
+  animation: marquee-left-to-right 30s linear infinite;
+}
+
+.animate-marquee-opposite {
+  animation: marquee-opposite 30s linear infinite;
+}
